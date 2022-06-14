@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #5d36eb;
+  --secondary-color: #967eee;
+  --tertiary-color: #492ab8;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Merriweather, serif;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  font-size: 16px;
+  background-color: ghostwhite;
+}
+
+.container {
+  margin-top: 50px;
+  padding: 0.3in;
+  background-color: ghostwhite;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  top: 0px;
+  align-items: center;
+  align-content: center;
+  background-color: #6952bb;
+}
+
+nav a {
+  color: ghostwhite;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -110px;
+  visibility: hidden;
+}
+
+#name {
+  margin-bottom: 12px;
+}
+
+#objective {
+  margin-bottom: 20px;
+}
+
+.fa-solid {
+  margin-right: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+.contact {
+  margin-bottom: 12px;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  margin-top: 40px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.organization {
+  display: inline;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.position {
+  font-size: 1.1rem;
+  display: inline;
+}
+
+.time {
+  color: #7d7d7d;
+  margin-bottom: 10px;
+}
+
+.entry {
+  margin-bottom: 24px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 12px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+ul div {
+  width: 100%;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+ul li {
+  background-color: var(--secondary-color);
+  color: ghostwhite;
+  padding: 6px;
+  margin: 1px;
+  font-size: 0.9rem;
+  border-radius: 3px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 7fr 3fr;
+  }
+
+  .experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 80%;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    box-shadow: 5px 5px 10px rgb(161, 161, 187);
+    border-radius: 18px;
+  }
+
+  body {
+    background-color: rgb(227, 227, 243);
+  }
+}
